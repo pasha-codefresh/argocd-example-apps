@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="da9b0587-ff93-4770-8377-2ac4488acd84" name="Default Changelist" comment="">
+    <list default="true" id="da9b0587-ff93-4770-8377-2ac4488acd84" name="Default Changelist" comment="tag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/svc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/simple/svc.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,30 +13,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="ed30c95b-73d6-452b-9634-14edc00634ef" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1wB8Q2jmxkjRBloTtcVOMNpwyit" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app-with-project" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/pashakostohrys/Documents/work/argocd-example-apps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app-with-project" />
@@ -59,13 +69,7 @@
       <workItem from="1635521944666" duration="3898000" />
       <workItem from="1637936186100" duration="1480000" />
       <workItem from="1649776528860" duration="1756000" />
-    </task>
-    <task id="LOCAL-00010" summary="change policy">
-      <created>1634142562924</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1634142562924</updated>
+      <workItem from="1675862261625" duration="2273000" />
     </task>
     <task id="LOCAL-00011" summary="change policy">
       <created>1634142736763</created>
@@ -403,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649847557444</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="tag">
+      <created>1675862350565</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1675862350566</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,15 +443,5 @@
     <MESSAGE value="svc" />
     <MESSAGE value="tag" />
     <option name="LAST_COMMIT_MESSAGE" value="tag" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="393" y="97" key="CommitChangelistDialog2" timestamp="1649847557347">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="393" y="97" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1649847557347" />
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1649846854457">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1649846854457" />
   </component>
 </project>
