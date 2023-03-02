@@ -1,0 +1,72 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: express-roll
+  labels:
+    somelb: some
+    # somelbv: some2
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app: express
+  template:
+    metadata:
+      labels:
+        app: express
+        # appss: exsspress
+    spec:
+      containers:
+        - image: xeonalex/guesbook:0.2
+          name: express
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+  minReadySeconds: 30
+  strategy:
+    canary:
+      # analysis:
+      #   templates:
+      #     - templateName: background
+      #     - templateName: background2
+      #   startingStep: 1 # delay starting analysis run until setWeight: 40%
+      steps:
+        # - analysis:
+        #     templates:
+        #     - templateName: star-w-template-1
+        - setWeight: 20
+        #         - setWeight: 75
+        #- analysis:
+        #    templates:
+        #    - templateName: star-w-template-3-inconclusive
+        - analysis:
+            templates:
+              - templateName: star-w-template-2
+        - analysis:
+            templates:
+              - templateName: background
+            # - templateName: background2
+        # - pause: {duration: 60s}
+        - pause: {duration: 20s}
+        # - analysis:
+        #     templates:
+        #     - templateName: prometheus-template
+        #     args:
+        #     - name: service-name
+        #       value: guestbook-svc.default.svc.cluster.local
+        # - experiment:
+        #     duration: 15s
+        #     templates:
+        #       - name: experiment-stable
+        #         specRef: stable
+        #         weight: 5
+        #       - name: experiment-canary
+        #         specRef: canary
+        #         weight: 5
+        #     # This experiment performs its own analysis by referencing one or more AnalysisTemplates
+        #     # here. The success or failure of these runs will progress or abort the rollout respectively.
+        #     analyses:
+        #     - templateName: experiment-analysis
+        #       requiredForCompletion: true

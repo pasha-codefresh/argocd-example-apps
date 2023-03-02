@@ -1,0 +1,57 @@
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: star-w-template-1
+spec:
+  metrics:
+    - name: starw-api-1
+      count: 30
+      interval: 5s
+      failureLimit: 1
+      provider:
+        web:
+          url: https://swapi.py4e.com/api/people/1
+          timeoutSeconds: 20 # defaults to 10 seconds
+          jsonPath: "{$.height}"
+---
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: star-w-template-2
+spec:
+  metrics:
+    - name: starw-api-2
+      count: 30
+      interval: 5s
+      failureCondition: result != '2'
+      failureLimit: 30
+      provider:
+        web:
+          url: https://swapi.dev/api/people/1
+          timeoutSeconds: 20 # defaults to 10 seconds
+          jsonPath: "{$.height}"
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: star-w-template-3-inconclusive
+spec:
+  metrics:
+    - name: starw-api-2
+      count: 5
+      interval: 10s
+      initialDelay: 5s
+      inconclusiveLimit: 4
+      consecutiveErrorLimit: 3
+      failureCondition: result == '170'
+      successCondition: result == '175'
+      failureLimit: 4
+      provider:
+        web:
+          url: https://swapi.dev/api/people/1
+          timeoutSeconds: 20 # defaults to 10 seconds
+          jsonPath: "{$.height}"

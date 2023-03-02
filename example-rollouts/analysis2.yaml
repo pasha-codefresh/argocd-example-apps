@@ -1,0 +1,158 @@
+# 2 AnalysisTemplates
+---
+
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: prometheus-template
+spec:
+  args:
+    - name: service-name
+  metrics:
+    - name: prometheus-metric
+      count: 2
+      interval: 10s
+      # NOTE: prometheus queries return results in the form of a vector.
+      # So it is common to access the index 0 of the returned array to obtain the value
+      successCondition: result[0] >= 100
+      failureLimit: 1
+      provider:
+        prometheus:
+          address: http://a95910c83807a4089a2458554bf5c21e-1864259807.us-east-1.elb.amazonaws.com:9090
+          query: |
+            sum(argocd_app_reconcile_sum)
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: mixed-tests
+spec:
+  metrics:
+    - name: pass-2
+      count: 2
+      interval: 5s
+      failureLimit: 1
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep-pass
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [exit 0]
+                restartPolicy: Never
+            backoffLimit: 0
+    - name: random-fail
+      count: 1
+      interval: 5s
+      failureLimit: 1
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep-fail
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [FLIP=$(($(($RANDOM%10))%2)) && exit $FLIP]
+                restartPolicy: Never
+            backoffLimit: 0
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: background
+spec:
+  metrics:
+    - name: pass-always
+      count: 2
+      interval: 5s
+      failureLimit: 1
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [exit 0]
+                restartPolicy: Never
+            backoffLimit: 0
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: background2
+spec:
+  metrics:
+    - name: pass-always-2
+      count: 2
+      interval: 5s
+      failureLimit: 1
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [exit 0]
+                restartPolicy: Never
+            backoffLimit: 0
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: experiment-analysis
+spec:
+  metrics:
+    - name: random-fail-experiment
+      count: 1
+      interval: 5s
+      failureLimit: 1
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep-fail
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [FLIP=$(($(($RANDOM%10))%2)) && exit $FLIP]
+                restartPolicy: Never
+            backoffLimit: 0
+
+---
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: only-fail
+spec:
+  metrics:
+    - name: only-fail-metric
+      count: 1
+      interval: 5s
+      failureLimit: 0
+      provider:
+        job:
+          spec:
+            template:
+              spec:
+                containers:
+                  - name: sleep-fail
+                    image: alpine:3.8
+                    command: [sh, -c]
+                    args: [exit 1]
+                restartPolicy: Never
+            backoffLimit: 0
