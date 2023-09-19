@@ -8,4 +8,4 @@ spec:
     targetPort: 80
   selector:
     app: guestbook-ui
-    solutionId: test
+    #solutionId: test
