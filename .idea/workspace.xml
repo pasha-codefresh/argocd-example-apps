@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da9b0587-ff93-4770-8377-2ac4488acd84" name="Default Changelist" comment="tag">
+    <list default="true" id="da9b0587-ff93-4770-8377-2ac4488acd84" name="Default Changelist" comment="guestbook kustomize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +15,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="v3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="ed30c95b-73d6-452b-9634-14edc00634ef" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,18 +34,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/pashakostohrys/Documents/work/argocd-example-apps",
+    "last_opened_file_path": "/Users/pashakostohrys/Documents/work/argocd-example-apps/kustomize-guestbook-components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app-with-project" />
+      <recent name="$PROJECT_DIR$/kustomize-guestbook-components" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app-with-project" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,104 +69,10 @@
       <workItem from="1637936186100" duration="1480000" />
       <workItem from="1649776528860" duration="1756000" />
       <workItem from="1675862261625" duration="2273000" />
-    </task>
-    <task id="LOCAL-00011" summary="change policy">
-      <created>1634142736763</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1634142736763</updated>
-    </task>
-    <task id="LOCAL-00012" summary="change">
-      <created>1634740773621</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1634740773621</updated>
-    </task>
-    <task id="LOCAL-00013" summary="change">
-      <created>1634741460243</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1634741460243</updated>
-    </task>
-    <task id="LOCAL-00014" summary="change">
-      <created>1634741538673</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1634741538673</updated>
-    </task>
-    <task id="LOCAL-00015" summary="change">
-      <created>1634741654081</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1634741654081</updated>
-    </task>
-    <task id="LOCAL-00016" summary="change">
-      <created>1634742013446</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742013446</updated>
-    </task>
-    <task id="LOCAL-00017" summary="change">
-      <created>1634742132401</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742132401</updated>
-    </task>
-    <task id="LOCAL-00018" summary="change">
-      <created>1634742448323</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742448323</updated>
-    </task>
-    <task id="LOCAL-00019" summary="change">
-      <created>1634742608968</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742608968</updated>
-    </task>
-    <task id="LOCAL-00020" summary="change">
-      <created>1634742733987</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742733987</updated>
-    </task>
-    <task id="LOCAL-00021" summary="change">
-      <created>1634742799759</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1634742799759</updated>
-    </task>
-    <task id="LOCAL-00022" summary="change">
-      <created>1634743063084</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1634743063084</updated>
-    </task>
-    <task id="LOCAL-00023" summary="change">
-      <created>1634744043976</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1634744043976</updated>
-    </task>
-    <task id="LOCAL-00024" summary="change">
-      <created>1634744680638</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1634744680638</updated>
+      <workItem from="1677764678407" duration="855000" />
+      <workItem from="1690469917690" duration="666000" />
+      <workItem from="1696929737689" duration="5015000" />
+      <workItem from="1698055428902" duration="3981000" />
     </task>
     <task id="LOCAL-00025" summary="change">
       <created>1634744928554</created>
@@ -414,14 +319,111 @@
       <option name="project" value="LOCAL" />
       <updated>1675862350566</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="rollout">
+      <created>1677764797051</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1677764797051</updated>
+    </task>
+    <task id="LOCAL-00061" summary="rollout">
+      <created>1677764808724</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1677764808724</updated>
+    </task>
+    <task id="LOCAL-00062" summary="v1">
+      <created>1690469966078</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469966078</updated>
+    </task>
+    <task id="LOCAL-00063" summary="v3">
+      <created>1690469984412</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469984412</updated>
+    </task>
+    <task id="LOCAL-00064" summary="deploy another guestbook">
+      <created>1696931919068</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1696931919069</updated>
+    </task>
+    <task id="LOCAL-00065" summary="deploy another guestbook">
+      <created>1696932759235</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1696932759235</updated>
+    </task>
+    <task id="LOCAL-00066" summary="deploy another guestbook">
+      <created>1696932813889</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1696932813889</updated>
+    </task>
+    <task id="LOCAL-00067" summary="deploy another guestbook">
+      <created>1697022280895</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1697022280895</updated>
+    </task>
+    <task id="LOCAL-00068" summary="deploy another guestbook">
+      <created>1697024355127</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1697024355127</updated>
+    </task>
+    <task id="LOCAL-00069" summary="deploy another guestbook">
+      <created>1697024540469</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1697024540469</updated>
+    </task>
+    <task id="LOCAL-00070" summary="deploy another guestbook">
+      <created>1697025491379</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1697025491379</updated>
+    </task>
+    <task id="LOCAL-00071" summary="deploy another guestbook">
+      <created>1697025673894</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1697025673894</updated>
+    </task>
+    <task id="LOCAL-00072" summary="guestbook kustomize">
+      <created>1699018908445</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1699018908445</updated>
+    </task>
+    <task id="LOCAL-00073" summary="guestbook kustomize">
+      <created>1699020817019</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1699020817019</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add values for repro an issue" />
     <MESSAGE value="change helmguesbook" />
     <MESSAGE value="change app" />
     <MESSAGE value="change policy" />
@@ -442,6 +444,11 @@
     <MESSAGE value="change ns" />
     <MESSAGE value="svc" />
     <MESSAGE value="tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="tag" />
+    <MESSAGE value="rollout" />
+    <MESSAGE value="v1" />
+    <MESSAGE value="v3" />
+    <MESSAGE value="deploy another guestbook" />
+    <MESSAGE value="guestbook kustomize" />
+    <option name="LAST_COMMIT_MESSAGE" value="guestbook kustomize" />
   </component>
 </project>
